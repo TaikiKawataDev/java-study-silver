@@ -1,0 +1,16 @@
+git add .
+
+git commit -m "xxx"
+””の中身は変更内容のタイトル
+
+練習中なら日本語でOK！
+"Java第1章の練習問題を追加"
+"Main.javaのバグを直した"
+
+"今日覚えたfor文のサンプル"
+プロっぽく英語で書くなら（よく使われるパターン）
+"Add: Main.java"（新しく作ったとき）
+"Update: README.md"（更新したとき）
+"Fix: error in loop"（間違いを直したとき）
+
+git push origin main

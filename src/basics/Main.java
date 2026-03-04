@@ -39,5 +39,22 @@ public class Main {
         String str = "Sample";
         String str2 = new String("Sample");
         String str3 = String.valueOf("Sample");
+
+        System.out.println("クラスの定義とインスタンスの使用");
+        System.out.println("レコードのコンストラクタのアクセス修飾詞について");
+        //レコードクラスより厳しいアクセス修飾詞をコンストラクタに指定してはいけない
+        //レコードクラスは他のクラスを継承できない代わりにインタフェースの実現は可能である。
+        //デフォルトメソッドが定義されていて、レコードとgetterとインタフェースのデフォルトメソッドの名前が同じ場合
+        //getterがデフォルトメソッドをオーバーライドするその際、シグニクチャや戻り値が違うとコンパイルエラーが発生する
+    }
+
+    //オーバーロードの条件
+    //引数の型、数、順番が違う
+    //オーバーロードは同じクラス内で同じ名前のメソッドを定義できる
+    public int calc(int a, int b) {
+        return a + b;
+    }
+    public int calc(int a, int b, int c) {
+        return a + b + c;
     }
 }

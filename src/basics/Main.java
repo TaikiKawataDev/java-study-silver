@@ -36,9 +36,9 @@ public class Main {
         //public void Sample(var value) { eny code,,, }
         
         System.out.println("Stringクラスを利用した文字列の生成");
-        String str = "Sample";
-        String str2 = new String("Sample");
-        String str3 = String.valueOf("Sample");
+        //String str = "Sample";
+        //String str2 = new String("Sample");
+        //String str3 = String.valueOf("Sample");
 
         System.out.println("クラスの定義とインスタンスの使用");
         System.out.println("レコードのコンストラクタのアクセス修飾詞について");
@@ -51,6 +51,26 @@ public class Main {
         //Aクラスのtry with resources内で例外が発生するとcloseメソッドが呼ばれる
         //closeメソッドでも例外が発生した際には、Aクラスで発生した例外に隠れてしまい、catchできない。
         //これを抑制された例外という
+
+        System.out.println("Javaの簡単な概要");
+        System.out.println("無名パッケージについて");
+        //無名パッケージに属するクラスは同じ無名パッケージに属するクラスからしかアクセスできない。
+        //明示的にパッケージ宣言をしたクラスから無名パッケージに属するクラスにはアクセスできない。
+
+        System.out.println("Javaのソースファイルモードについて");
+        //class Sample {} このクラスをソースファイルモードで実行
+        //java Sample.java もしくは、、、
+        //java --source 17 Sample 拡張子が.java では無い際に使用
+        //Javaのソースファイルモードはコンパイルしていないわけではなく "クラスファイルっぽいものを作成する"
+        //注:クラスファイルは作成しない。クラスファイルを作成したい場合はjavacコマンドを使用する
+        
+        System.out.println("Javaの実行について");
+        //javacコマンドでコンパイルし、そのクラスファイルをjavaコマンドで実行
+        //javac Sample.java
+        //java Sample
+        //javaコマンドのソールファイルモードを使用
+        //java Sample.java
+        //java --source 17 Sample
     }
 
     //オーバーロードの条件
